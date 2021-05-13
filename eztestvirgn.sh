@@ -18,3 +18,15 @@ alias 5rcrd='mv screencast.mp4' #Переименовывает
 #Прокси
 #alias proxon='adb shell settings put global http_proxy !!ВВЕДИ IP УСТРОЙСТВА ИЗ CHARLES!!' #Включает прокси для Charles
 alias proxoff='adb shell settings put global http_proxy :0' #Отключает прокси
+
+#Скрипт на скринкасты
+function ezcast $1
+{
+2rcrd&&3rcrd&&4rcrd&&5rcrd $1.mp4&&open .&&cd
+}
+
+#Скрипт на создание скриншотов
+function ezscreen $1
+{
+1scrn&&2scrn&&3scrn&&4scrn&&5scrn $1.png&&open .&&cd
+}
